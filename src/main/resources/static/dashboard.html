@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard - Sunrise Dental Clinic</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <aside class="sidebar">
+
+        <p class="user-name"
+           id="user-name">
+            -
+        </p>
+
+        <p class="user-role"
+           id="user-role">
+            -
+        </p>
+
+        <nav id="nav-links"></nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <h2>
+            Appointments
+        </h2>
+
+        <p class="subtitle"
+           id="subtitle">
+
+            Loading appointments...
+
+        </p>
+
+
+
+        <!-- Appointment table -->
+
+        <div class="card">
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>No.</th>
+
+                    <th>Patient</th>
+
+                    <th>Dentist</th>
+
+                    <th>Treatment</th>
+
+                    <th>Date</th>
+
+                    <th>Time</th>
+
+                    <th>Status</th>
+
+                </tr>
+
+                </thead>
+
+                <tbody id="appointments-body">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
+

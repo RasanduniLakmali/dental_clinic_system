@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Manage Staff - Sunrise Dental Clinic</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <aside class="sidebar">
+
+        <p class="user-name"
+           id="user-name">
+            -
+        </p>
+
+        <p class="user-role"
+           id="user-role">
+            -
+        </p>
+
+        <nav id="nav-links"></nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <h2>
+            Manage Staff
+        </h2>
+
+        <p class="subtitle">
+            Create and manage Dentist and Receptionist accounts.
+        </p>
+
+
+        <div class="card"
+             style="max-width:650px">
+
+            <div class="alert success"
+                 id="success-alert">
+            </div>
+
+            <div class="alert error"
+                 id="error-alert">
+            </div>
+
+
+            <form id="staff-form">
+
+                <div class="grid-2">
+
+
+                    <div>
+
+                        <label for="displayName">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="displayName"
+                            placeholder="e.g. Dr. Nadeesha Silva"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="role">
+                            Role
+                        </label>
+
+                        <select id="role"
+                                required>
+
+                            <option value="DENTIST">
+                                Dentist
+                            </option>
+
+                            <option value="RECEPTIONIST">
+                                Receptionist
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="full">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="name@example.com"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="primary"
+                    id="staff-submit-btn"
+                    style="width:auto">
+
+                    <span id="staff-submit-label">
+
+                        👤 Create Account
+
+                    </span>
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+        <h2 style="margin-top:35px">
+            Existing Staff
+        </h2>
+
+        <p class="subtitle">
+            Staff accounts currently registered in the system.
+        </p>
+
+
+        <div class="card">
+
+            <table>
+
+                <thead>
+
+                <tr>
+
+                    <th>Name</th>
+
+                    <th>Username</th>
+
+                    <th>Email</th>
+
+                    <th>Role</th>
+
+                    <th>Status</th>
+
+                    <th></th>
+
+                </tr>
+
+                </thead>
+
+                <tbody id="staff-body">
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="js/api.js"></script>
+<script src="js/staff.js"></script>
+
+</body>
+
+</html>
+

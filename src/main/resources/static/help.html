@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Help - Sunrise Dental Clinic</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <aside class="sidebar">
+
+        <p class="user-name"
+           id="user-name">
+            -
+        </p>
+
+        <p class="user-role"
+           id="user-role">
+            -
+        </p>
+
+        <nav id="nav-links"></nav>
+
+    </aside>
+
+
+    <main class="main">
+
+        <h2>
+            Help & Guidance
+        </h2>
+
+        <p class="subtitle">
+            Step-by-step guidance for Sunrise Dental Clinic staff.
+        </p>
+
+
+        <div class="card help-section">
+
+
+            <h3>
+                🔐 Signing In
+            </h3>
+
+            <p>
+                Use the username and password provided by
+                the clinic administrator.
+            </p>
+
+            <p>
+                If you forget your password, contact an
+                Admin to reset your account.
+            </p>
+
+
+            <h3>
+                📅 Registering a New Appointment
+            </h3>
+
+            <ol>
+
+                <li>
+                    Open
+                    <strong>Register Appointment</strong>
+                    from the side menu.
+                </li>
+
+                <li>
+                    Enter the patient's full name,
+                    address and contact number.
+                </li>
+
+                <li>
+                    Select the dentist and treatment type.
+                </li>
+
+                <li>
+                    Select the appointment date and time.
+                </li>
+
+                <li>
+                    Click
+                    <strong>Save Appointment</strong>.
+                </li>
+
+                <li>
+                    The system automatically generates
+                    an appointment number.
+                </li>
+
+            </ol>
+
+
+            <h3>
+                🔎 Finding an Appointment
+            </h3>
+
+            <ol>
+
+                <li>
+                    Open
+                    <strong>Search & Bill</strong>.
+                </li>
+
+                <li>
+                    Enter the appointment number.
+                </li>
+
+                <li>
+                    Click
+                    <strong>Find</strong>.
+                </li>
+
+                <li>
+                    The patient's appointment details
+                    will appear.
+                </li>
+
+            </ol>
+
+
+            <h3>
+                🧾 Generating a Bill
+            </h3>
+
+            <ol>
+
+                <li>
+                    Search for the appointment.
+                </li>
+
+                <li>
+                    Click
+                    <strong>Calculate Bill</strong>.
+                </li>
+
+                <li>
+                    The system calculates the consultation
+                    fee and treatment fee.
+                </li>
+
+                <li>
+                    Review the total amount.
+                </li>
+
+                <li>
+                    Click
+                    <strong>Print</strong>
+                    or
+                    <strong>Download PDF</strong>.
+                </li>
+
+            </ol>
+
+
+            <h3>
+                👥 Managing Staff
+            </h3>
+
+            <p>
+                Admin users can create Dentist and Receptionist
+                accounts from the
+                <strong>Manage Staff</strong>
+                page.
+            </p>
+
+            <p>
+                A temporary password is generated automatically
+                when a new account is created.
+            </p>
+
+
+            <h3>
+                🚪 Signing Out
+            </h3>
+
+            <p>
+                Click
+                <strong>Log out</strong>
+                in the side navigation when you finish using
+                the system.
+            </p>
+
+            <p>
+                Always sign out when using a shared
+                reception computer.
+            </p>
+
+        </div>
+
+    </main>
+
+</div>
+
+
+<script src="js/api.js"></script>
+
+<script>
+
+    if (requireLogin()) {
+        renderNav("help.html");
+    }
+
+</script>
+
+</body>
+
+</html>
+

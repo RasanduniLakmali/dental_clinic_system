@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Sign In - Sunrise Dental Clinic</title>
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="center-screen">
+
+    <div class="login-card">
+
+        <div class="brand">
+
+            <div class="badge-icon">
+                🦷
+            </div>
+
+            <h1>
+                Sunrise Dental Clinic
+            </h1>
+
+            <p>
+                Staff Management System
+            </p>
+
+        </div>
+
+
+        <div class="role-tabs"
+             id="role-tabs">
+
+            <button type="button"
+                    class="role-tab active"
+                    data-role="ADMIN">
+
+                Admin
+
+            </button>
+
+            <button type="button"
+                    class="role-tab"
+                    data-role="RECEPTIONIST">
+
+                Receptionist
+
+            </button>
+
+            <button type="button"
+                    class="role-tab"
+                    data-role="DENTIST">
+
+                Dentist
+
+            </button>
+
+        </div>
+
+
+        <form id="login-form">
+
+            <label for="username">
+                Username
+            </label>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter your username"
+                required
+                autocomplete="username"
+            >
+
+
+            <label for="password">
+                Password
+            </label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter your password"
+                required
+                autocomplete="current-password"
+            >
+
+
+            <p class="form-error"
+               id="login-error">
+
+                Incorrect username or password.
+
+            </p>
+
+
+            <button
+                type="submit"
+                class="primary"
+                id="login-btn">
+
+                <span id="login-btn-label">
+                    Sign in
+                </span>
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+<script src="js/api.js"></script>
+<script src="js/login.js"></script>
+
+</body>
+
+</html>
